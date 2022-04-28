@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>TO BE HONEST</title>
 </head>
@@ -12,21 +14,25 @@
 <body>
     <main>
         <div class="inputBox">
-            <input type="text" id="message" placeholder="To be honest..." onkeyup="handleMessageInput()">
+            <input type="text" id="message" placeholder="let's be honest..." onkeyup="handleMessageInput()">
         </div>
-        <h2 class="textBox">
+        <h3 class="textBox">
             <span class="text">
                 <span>To be honest...</span>
                 <span class="hiddenText"></span>
             </span>
-           
-        </h2>
+        </h3>
         <div class="shareBox">
-            <button class="shareButton" onclick="handleShareButton()">Share</button>
+            <button class="shareButton myBtn" onclick="handleShareButton()"><i class="bi bi-chat-heart"></i>Share<i class="bi bi-share-fill"></i></button>
         </div>
         <div class="resetBox">
-            <button class="resetButton" onclick="handleResetButton()">Write a reply</button>
+            <button class="resetButton myBtn" onclick="handleResetButton()"><i class="bi bi-chat-heart"></i>Reply<i class="bi bi-reply-fill"></i></button>
         </div>
+        <span class="tutorialBox">
+            <span>
+                <i class="bi bi-arrow-bar-up"></i>&nbsp; Long press the text above or select it to show the hidden message &nbsp;<i class="bi bi-arrow-bar-up"></i>
+            </span>
+        </span>
     </main>
 </body>
 <script src="script.js"></script>

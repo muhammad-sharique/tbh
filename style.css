@@ -9,11 +9,52 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 .hiddenText{
     color: white;
 }
 .textBox span::selection{
-    background-color: #7388d0;
+    background-color: #e28689;
     color: white;
+}
+
+.myBtn i{
+    margin: 0 5px;
+}
+.myBtn{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    background:#fc94af;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.myBtn:active{
+    transform: scale(1.1);
+}
+#message{
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: solid 2px #fc94af;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+.tutorialBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 100px;
+    /* padding: 10px; */
 }

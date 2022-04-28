@@ -42,6 +42,7 @@ function handleResetButton(){
     window.location.href = window.location.href.split("?message=")[0];
 }
 window.onload = function(){
+   
     if(window.location.href.includes("?message=")){
         var encryptedMessage = window.location.href.split("?message=")[1];
         console.log(encryptedMessage);
@@ -53,4 +54,9 @@ window.onload = function(){
     else{
         document.querySelector('.resetBox').remove();
     }
+}
+document.onclick = function(e){
+    setTimeout(function(){
+        document.querySelector('.tutorialBox').remove();
+    }, 300);
 }
