@@ -15,7 +15,7 @@ main{
     color: white;
 }
 .textBox span::selection{
-    background-color: #e28689;
+    background-color: #7388d0;
     color: white;
 }
 
@@ -25,7 +25,7 @@ main{
 .myBtn{
     position: fixed;
     bottom: 50px;
-    right: 50px;
+    right: 10px;
     padding: 10px;
     font-size: 20px;
     border-radius: 20px;

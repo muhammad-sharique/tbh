@@ -42,7 +42,7 @@ function handleResetButton(){
     window.location.href = window.location.href.split("?message=")[0];
 }
 window.onload = function(){
-   
+    selectText('selectedText');
     if(window.location.href.includes("?message=")){
         var encryptedMessage = window.location.href.split("?message=")[1];
         console.log(encryptedMessage);
@@ -59,4 +59,22 @@ document.onclick = function(e){
     setTimeout(function(){
         document.querySelector('.tutorialBox').remove();
     }, 300);
+}
+
+function selectText(node) {
+    node = document.getElementById(node);
+
+    if (document.body.createTextRange) {
+        const range = document.body.createTextRange();
+        range.moveToElementText(node);
+        range.select();
+    } else if (window.getSelection) {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(node);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    } else {
+        console.warn("Could not select text in node: Unsupported browser.");
+    }
 }
