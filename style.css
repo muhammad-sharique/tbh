@@ -1,3 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	font-family: 'Times New Roman', Times, serif;
+	background: white;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 main{
     display: flex;
     width: 100%;
@@ -15,8 +31,14 @@ main{
     color: white;
 }
 .textBox span::selection{
-    background-color: #7388d0;
+    background-color: #ff507f;
     color: white;
+}
+.textBox .text .hiddenText{
+	text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-position: under;
+    text-decoration-color: black;
 }
 
 .myBtn i{
