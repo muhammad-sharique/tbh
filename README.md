@@ -5,14 +5,14 @@ This is a small, fun little web toy that lets you anonymously (or not!) confess 
 
 ## 🌐 Try it out
 
-👉 [tbh.vercel.app](https://tbh.vercel.app)
+👉 [tbh.muhammadsharique.com](https://tbh.muhammadsharique.com)
 
 1. Type your confession.
 2. Share the link with the person you're confessing to.
 3. That's it.
 
 Example:
-[https://tbh.vercel.app/?message=422b6a662b6c676a6f2b7864666e64656e2b6a687f7e6a6767722b796e6a6f2b627f25](https://tbh.vercel.app/?message=422b6a662b6c676a6f2b7864666e64656e2b6a687f7e6a6767722b796e6a6f2b627f25)
+[https://tbh.muhammadsharique.com/?message=422b6a662b6c676a6f2b7864666e64656e2b6a687f7e6a6767722b796e6a6f2b627f25](https://tbh.muhammadsharique.com/?message=422b6a662b6c676a6f2b7864666e64656e2b6a687f7e6a6767722b796e6a6f2b627f25)
 
 ## ⚙️ How it works
 
@@ -28,4 +28,4 @@ Example:
 
 ## 📦 Deployment
 
-Hosted on [Vercel](https://vercel.com), so it's fast, free, and serverless.
+Hosted on [Vercel](https://tbh.vercel.app), so it's fast, free, and serverless.
